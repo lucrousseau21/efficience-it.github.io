@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-indigo-600 text-white py-2.5 px-7 rounded-lg hover:bg-indigo-700 transition duration-200 inline-block text-center font-medium text-sm;
+  }
+
+  .card {
+    @apply text-center bg-white border border-gray-200 rounded-xl p-6 hover:border-indigo-300 transition duration-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-indigo-500 dark:text-gray-200;
+  }
+
+  .header {
+    @apply bg-white border-b border-gray-200 p-8 text-center dark:bg-gray-900 dark:border-gray-700;
+  }
+
+  .footer {
+    @apply border-t border-gray-100 p-6 text-center mt-auto dark:border-gray-700;
+  }
+}
+
+/* quiz-only styles (migrated from quizz_docker.html) */
+.answer-label {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+.answer-item {
+  min-width: 0;
+}
+#questions-container > div {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+}
+#questions-container > div.mb-4 {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+}
+.dark #questions-container > div,
+.dark #questions-container > div.mb-4 {
+  background: #1f2937;
+  border-color: #374151;
+}
+

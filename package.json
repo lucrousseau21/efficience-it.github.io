@@ -1,0 +1,12 @@
+{
+  "name": "efficience-it.github.io",
+  "private": true,
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css --minify",
+    "dev:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css --watch"
+  }
+}
+

@@ -16,46 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-            },
-          },
-        },
-      }
-    </script>
-    <style type="text/tailwindcss">
-      html, body {
-        height: 100%;
-      }
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      @layer components {
-        .btn-primary {
-          @apply bg-indigo-600 text-white py-2.5 px-7 rounded-lg hover:bg-indigo-700 transition duration-200 inline-block text-center font-medium text-sm;
-        }
-
-        .card {
-          @apply text-center bg-white border border-gray-200 rounded-xl p-6 hover:border-indigo-300 transition duration-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-indigo-500 dark:text-gray-200;
-        }
-
-        .header {
-          @apply bg-white border-b border-gray-200 p-8 text-center dark:bg-gray-900 dark:border-gray-700;
-        }
-
-        .footer {
-          @apply border-t border-gray-100 p-6 text-center mt-auto dark:border-gray-700;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
   </head>
   <body class="bg-stone-50 dark:bg-gray-900 px-2 sm:px-4 font-sans dark:text-gray-200">
     <main class="flex-1 flex flex-col">
